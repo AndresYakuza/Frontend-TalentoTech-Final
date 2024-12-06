@@ -18,3 +18,5 @@ const updateCartTotal = () => {
     const total = cartItems.reduce((acc, item) => acc + item.price, 0);
     document.getElementById('cart-total').textContent = total.toFixed(2);
 };
+
+
