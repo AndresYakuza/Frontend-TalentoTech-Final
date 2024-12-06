@@ -267,6 +267,46 @@ h2::after {
 }
 
 
+/* General */
+.about-section, .values-section, .team-section {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about-section img {
+    border-radius: 10px;
+}
+
+.values-section i {
+    margin-bottom: 15px;
+    transition: transform 0.3s;
+}
+
+.values-section i:hover {
+    transform: scale(1.2);
+}
+
+.team-section img {
+    border: 3px solid #ffc107; /* Amarillo vibrante */
+    transition: transform 0.3s ease;
+}
+
+.team-section img:hover {
+    transform: scale(1.1);
+}
+
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .about-section img, .team-section img {
+        width: 100%;
+    }
+}
+
+
+
 
 
 
