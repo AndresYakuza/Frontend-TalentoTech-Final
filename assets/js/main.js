@@ -9,7 +9,7 @@ const addToCart = (productName, productPrice) => {
 
 document.querySelectorAll('.btn-primary').forEach((button, index) => {
     button.addEventListener('click', () => {
-        addToCart(`Producto ${index + 1}`, 10.00); // Ejemplo de producto
+        addToCart(`Producto ${index + 1}`, 10.00); 
     });
 });
 
