@@ -2,31 +2,216 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; 
+    margin: 0;
+}
+
+main {
+    flex: 1; 
 }
 
 header {
-    background-color: #333;
+    background: linear-gradient(90deg, #fcd116, #003893, #ce1126); 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
     color: white;
-    padding: 1rem;
-    text-align: center;
 }
 
-nav a {
-    color: white;
-    margin: 0 1rem;
-    text-decoration: none;
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
 }
 
-nav a:hover {
-    text-decoration: underline;
+.navbar-nav .nav-link {
+    font-size: 1.1rem;
+    color: white;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
 }
+
+.navbar-nav .nav-link i {
+    color: white;
+    font-size: 1.2rem;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #ffcc00;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.navbar-nav .nav-link:hover i {
+    color: #ffd700; 
+}
+
+header .navbar-toggler {
+    border: 1px solid white;
+}
+
+
 
 footer {
-    background-color: #333;
+    background: linear-gradient(90deg, #fcd116, #003893, #ce1126); 
     color: white;
     text-align: center;
-    padding: 1rem;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+    padding: 1rem 0;
+    font-size: 0.9rem;
+    position: relative;
 }
+
+footer p {
+    margin: 0;
+}
+
+footer .social-icons {
+    margin-top: 0.5rem;
+}
+
+footer .social-icons a {
+    color: white;
+    margin: 0 0.5rem;
+    font-size: 1.2rem;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+footer .social-icons a:hover {
+    color: #ffd700; 
+    transform: scale(1.2); 
+}
+
+
+.carousel-inner img {
+    height: 400px;
+    object-fit: cover;
+    border-radius: 8px; 
+}
+
+.carousel-indicators button {
+    background-color: #ffcc00; 
+}
+
+.carousel-indicators .active {
+    background-color: #ffd700; 
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: invert(1);
+}
+
+
+.testimonials {
+    background: linear-gradient(90deg, #f7f7f7, #ffffff);
+    color: #333;
+    border-top: 5px solid #ffcc00;
+    border-bottom: 5px solid #003893;
+}
+
+.testimonial-card {
+    background: white;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.testimonial-card p {
+    font-style: italic;
+    color: #555;
+}
+
+.testimonial-card img {
+    border: 2px solid #ffcc00; 
+}
+
+.testimonials h2 {
+    color: #003893;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+}
+
+.testimonials small {
+    color: #777;
+}
+
+
+h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    color: #003893;
+    letter-spacing: 2px;
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+h2::after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 5px;
+    background: linear-gradient(90deg, #fcd116, #003893, #ce1126);
+    margin: 0.5rem auto 0;
+    border-radius: 5px;
+}
+
+.card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 3px solid #fcd116;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #003893;
+    margin-bottom: 0.75rem;
+    text-align: center;
+}
+
+.card-text {
+    font-size: 1rem;
+    color: #555;
+    text-align: justify;
+    margin-bottom: 1rem;
+}
+
+.btn-primary {
+    background-color: #003893;
+    border-color: #003893;
+    color: #fff;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #fcd116;
+    color: #003893;
+    transform: scale(1.05);
+}
+
+
+
+
+
+
+
+
+
+
