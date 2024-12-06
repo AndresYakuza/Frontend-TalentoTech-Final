@@ -1,20 +1,21 @@
+/* Estilos generales */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     display: flex;
     flex-direction: column;
-    min-height: 100vh; 
-    margin: 0;
+    min-height: 100vh;
 }
 
 main {
-    flex: 1; 
+    flex: 1;
 }
 
+/* Header */
 header {
-    background: linear-gradient(90deg, #fcd116, #003893, #ce1126); 
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    background: linear-gradient(90deg, #fcd116, #003893, #ce1126); /* Bandera colombiana */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     color: white;
 }
 
@@ -29,41 +30,27 @@ header {
     transition: color 0.3s ease, text-shadow 0.3s ease;
 }
 
-.navbar-nav .nav-link i {
-    color: white;
-    font-size: 1.2rem;
-}
-
 .navbar-nav .nav-link:hover {
     color: #ffcc00;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
 
-.navbar-nav .nav-link:hover i {
-    color: #ffd700; 
-}
-
-header .navbar-toggler {
+.navbar-toggler {
     border: 1px solid white;
 }
 
-
-
+/* Footer */
 footer {
-    background: linear-gradient(90deg, #fcd116, #003893, #ce1126); 
+    background: linear-gradient(90deg, #fcd116, #003893, #ce1126); /* Bandera colombiana */
     color: white;
     text-align: center;
     padding: 1rem 0;
-    font-size: 0.9rem;
-    position: relative;
 }
 
 footer p {
     margin: 0;
-}
-
-footer .social-icons {
-    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    color: white;
 }
 
 footer .social-icons a {
@@ -74,23 +61,23 @@ footer .social-icons a {
 }
 
 footer .social-icons a:hover {
-    color: #ffd700; 
-    transform: scale(1.2); 
+    color: #ffd700;
+    transform: scale(1.2);
 }
 
-
+/* Carrusel */
 .carousel-inner img {
     height: 400px;
     object-fit: cover;
-    border-radius: 8px; 
+    border-radius: 8px;
 }
 
 .carousel-indicators button {
-    background-color: #ffcc00; 
+    background-color: #ffcc00;
 }
 
 .carousel-indicators .active {
-    background-color: #ffd700; 
+    background-color: #ffd700;
 }
 
 .carousel-control-prev-icon,
@@ -98,7 +85,7 @@ footer .social-icons a:hover {
     filter: invert(1);
 }
 
-
+/* Testimonios */
 .testimonials {
     background: linear-gradient(90deg, #f7f7f7, #ffffff);
     color: #333;
@@ -123,7 +110,7 @@ footer .social-icons a:hover {
 }
 
 .testimonial-card img {
-    border: 2px solid #ffcc00; 
+    border: 2px solid #ffcc00;
 }
 
 .testimonials h2 {
@@ -137,7 +124,7 @@ footer .social-icons a:hover {
     color: #777;
 }
 
-
+/* Títulos */
 h2 {
     font-size: 2rem;
     font-weight: bold;
@@ -145,7 +132,6 @@ h2 {
     text-transform: uppercase;
     color: #003893;
     letter-spacing: 2px;
-    position: relative;
     margin-bottom: 2rem;
 }
 
@@ -159,12 +145,12 @@ h2::after {
     border-radius: 5px;
 }
 
+/* Tarjetas */
 .card {
     border: none;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    overflow: hidden;
 }
 
 .card:hover {
@@ -193,6 +179,7 @@ h2::after {
     margin-bottom: 1rem;
 }
 
+/* Botones */
 .btn-primary {
     background-color: #003893;
     border-color: #003893;
@@ -205,6 +192,7 @@ h2::after {
     color: #003893;
     transform: scale(1.05);
 }
+
 
 
 

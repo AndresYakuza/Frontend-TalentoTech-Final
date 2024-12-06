@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,40 +15,12 @@
 
 
 </head>
+
 <body>
-    
-    <header class="bg-dark text-white py-3 shadow">
-        <div class="container">
-            <nav class="navbar navbar-expand-lg navbar-dark">
-                <a class="navbar-brand d-flex align-items-center" href="index.html">
-                    <i class="fas fa-store me-2"></i> E-Commerce Artesanales
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="index.html"><i class="fas fa-home me-2"></i>Inicio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="products.html"><i class="fas fa-box-open me-2"></i>Productos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="cart.html"><i class="fas fa-shopping-cart me-2"></i>Carrito</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="about.html"><i class="fas fa-info-circle me-2"></i>Acerca de</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="contact.html"><i class="fas fa-envelope me-2"></i>Contacto</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-        </div>
-    </header>
-    
+
+    <!-- Placeholder para cargar el header -->
+    <div id="header-placeholder"></div>
+
     <main class="container my-5">
 
         <!-- Carrusel principal -->
@@ -209,20 +182,23 @@
                 </div>
             </div>
         </section>
-        
-        
-    </main>
-    
 
-    <footer>
-        <p>© 2024 E-Commerce Artesanales. Todos los derechos reservados.</p>
-        <div class="social-icons">
-            <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook"></i></a>
-            <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
-            <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
-            <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer"><i class="fab fa-youtube"></i></a>
-        </div>
-    </footer>
+    </main>
+
+    <!-- Placeholder para cargar el footer -->
+    <div id="footer-placeholder"></div>
+
+    <script>
+        // Cargar el header dinámicamente
+        fetch('components/html/header.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('header-placeholder').innerHTML = data);
+
+        // Cargar el footer dinámicamente
+        fetch('components/html/footer.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('footer-placeholder').innerHTML = data);
+    </script>
 
 </body>
 </html>
