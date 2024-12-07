@@ -1,9 +1,15 @@
 // Inicializamos el carrito desde localStorage
 let cart = JSON.parse(localStorage.getItem('cart')) || [];
 
+if (cart.length === 0) {
+    localStorage.setItem('carritoContador', 0);
+}
 // Función para actualizar el carrito en localStorage
 function updateLocalStorage() {
     localStorage.setItem('cart', JSON.stringify(cart));
+}
+function reloadPage() {
+    window.location.reload();
 }
 
 // Función para renderizar los productos en el carrito
@@ -44,9 +50,12 @@ function updateQuantity(index, quantity) {
 
 // Función para eliminar un producto del carrito
 function removeItem(index) {
+    let contador = localStorage.getItem('carritoContador');
     cart.splice(index, 1);
     updateLocalStorage();
-    renderCart();
+    contador--;
+    localStorage.setItem('carritoContador', contador);
+    reloadPage();
 }
 
 // Evento para manejar cambios en las cantidades
