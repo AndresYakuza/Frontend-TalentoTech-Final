@@ -7,6 +7,15 @@ function updateCartCounter() {
     }
 }
 
+function showToast(duration = 4000) { // Duración predeterminada de 5 segundos
+    const toastElement = document.getElementById('productToast');
+    const toast = new bootstrap.Toast(toastElement, {
+        autohide: true, 
+        delay: duration 
+    });
+    toast.show();
+}
+
 function addToCart(name, price) {
     const existingItem = cart.find(item => item.name === name);
     if (existingItem) {
@@ -15,12 +24,13 @@ function addToCart(name, price) {
         cart.push({ name, price, quantity: 1 });
     }
     updateLocalStorage();
-    alert("¡Producto añadido al carrito con éxito! Para completar tu compra, dirígete a la pestaña 'Carrito' en el menú superior.");
-    
+
+    showToast(1500); 
     contador++;
     localStorage.setItem('carritoContador', contador);
-    updateCartCounter(); // Actualiza el contador en el DOM
+    updateCartCounter();
 }
+
 
 // Llamada inicial al cargar la página
 document.addEventListener('DOMContentLoaded', () => {

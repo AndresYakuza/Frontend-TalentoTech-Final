@@ -78,7 +78,7 @@ document.getElementById('cart-items').addEventListener('click', (event) => {
 // Evento para proceder al pago
 document.getElementById('checkout-btn').addEventListener('click', () => {
     if (cart.length === 0) {
-        alert('Tu carrito está vacío');
+        showToast(1500); 
     } else {
         alert('Redirigiendo al pago...');
         // Redirigir al pago o procesar el pedido
