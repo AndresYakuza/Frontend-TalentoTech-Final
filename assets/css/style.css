@@ -365,6 +365,67 @@ form button:hover {
     left: -5px;
 }
 
+.card {
+    border: none;
+    border-radius: 8px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    overflow: hidden;
+}
+
+.card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-title {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+.card img {
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 3px solid #fcd116;
+}
+
+.card-body p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+.card-body .btn {
+    margin: 0.3rem 0;
+}
+
+.btn-primary {
+    background-color: #003893;
+    border-color: #003893;
+    transition: transform 0.2s;
+}
+
+.btn-primary:hover {
+    background-color: #fcd116;
+    transform: scale(1.05);
+}
+
+.btn-link {
+    text-decoration: none;
+    font-size: 0.8rem;
+    transition: color 0.3s;
+}
+
+.btn-link:hover {
+    color: #003893;
+}
+
+.collapse {
+    font-size: 0.85rem;
+    color: #555;
+}
+
+.list-unstyled li {
+    margin-bottom: 0.3rem;
+}
 
 
 
